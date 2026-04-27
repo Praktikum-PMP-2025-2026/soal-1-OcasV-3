@@ -57,7 +57,7 @@ void medianVelocity(int *arr, int count, float *median) {
     int idx;
     if (count % 2 == 0){
         idx = count/2;
-        *median = (arr[idx] + arr[idx-1])/2;
+        *median = (float)(arr[idx] + arr[idx-1])/2;
     } else {
         idx = (count-1)/2;
         *median = arr[idx];
@@ -78,16 +78,12 @@ int main() {
     Bubblesort(arr, count);
     medianVelocity(arr, count, &median);
 
-    printf("COUNT %d\n", count);
-    printf("SORTED ");
+
+    printf("%d ", count);
     for (int i=0; i<count; i++) {
-        printf("%d", arr[i]);
-        if (i-1<count) {
-            printf(" ");
-        }
+        printf("%d ", arr[i]);
     }
-    printf("\n");
-    printf("MEDIAN %.2f\n", median);
+    printf("%.2f\n", median);
 
     return 0;
 }
