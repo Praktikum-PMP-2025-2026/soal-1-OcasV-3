@@ -79,11 +79,16 @@ int main() {
     medianVelocity(arr, count, &median);
 
 
-    printf("%d ", count);
+    printf("COUNT %d ", count);
+    printf("SORTED ");
     for (int i=0; i<count; i++) {
         printf("%d ", arr[i]);
     }
-    printf("%.2f\n", median);
+    if (count % 2 == 0) {
+        printf("MEDIAN %.2f\n", median);
+    } else {
+        printf("MEDIAN %.0f\n", median);
+    }
 
     return 0;
 }
