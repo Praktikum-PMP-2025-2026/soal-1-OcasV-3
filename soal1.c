@@ -1,7 +1,7 @@
 /*
 * EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2025/2026
 * Modul : 3 - Structure and Dynamics Arrays
-* Hari dan Tanggal : Senin, 27 April 2026
+* Hari dan Tanggal : Senin, 27 April 2026 
 * Pembuat : Farras Fuady Hakim
 * Nama File : 13224047.c
 * Deskripsi : Menerima data kecapatan angin N buah dan mengeluarkan jumlah, data yang sudah diurut, dan median.
